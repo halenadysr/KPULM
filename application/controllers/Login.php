@@ -1,15 +1,16 @@
 <?php
 defined("BASEPATH") OR exit("No direct script access allowed");
 
+/**
+ * @property Login $session
+ */ 
 class Login extends CI_Controller {
 
     public function __construct() {
         parent::__construct();
-        $this->load->model('User_model'); // Load User_model
-        $this->load->library('session');  // Load session
-        $this->load->helper('url');       // Load URL helper
-        $this->load->helper('form');      // Load form helper
+        $this->load->library('session'); 
     }
+
     public function index()
     {
         $this->load->view('login_view');
@@ -23,7 +24,6 @@ class Login extends CI_Controller {
     }
     
     public function logout() {
-        $this->load->library('session');
         $this->session->set_userdata('username', FALSE);
         $this->session->sess_destroy();
         redirect('login');
