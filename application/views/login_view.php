@@ -26,6 +26,14 @@
                         <!-- <p class="mb-4">Lorem ipsum dolor sit amet elit. Sapiente sit aut eos consectetur adipisicing. -->
                         </p>
                         <form action="<?php echo site_url('login/ceklogin')?>" method="post">
+
+                            <?php
+                            $info = $this->session->flashdata('info');
+                            if(!empty($info)) {
+                                echo $info;
+                            }
+                            ?>
+                            
                             <div class="form-group first">
                                 <label for="username">Username</label>
                                 <input type="text" class="form-control" name="username" placeholder="your-email@gmail.com"

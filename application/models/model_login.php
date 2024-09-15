@@ -22,4 +22,11 @@ class Model_login extends CI_Model {
         }
     }
     
+    public function keamanan() {
+        $username = $this->session->sess_destroy('username');
+        if(!empty($username)) {
+            $this->session->sess_destroy();
+            redirect('login');
+        }
+    }
 }
