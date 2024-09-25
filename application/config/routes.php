@@ -52,4 +52,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $route['default_controller'] = 'home';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
-$route['data_aset'] = 'data_aset';  // Pastikan Dataaset adalah nama controller yang sesuai
+$route['profile/edit'] = 'Edit_profile/index';
+$route['editprofile/update'] = 'Edit_profile/update';
+$route['transaksi_selesai'] = 'controller_nama/method_nama';
+$route['transaksi_selesai'] = 'TransaksiController/selesai';
+$route['login_process'] = 'auth/login_process';
+$route['dashboard'] = 'dashboard/index';
+
+
+

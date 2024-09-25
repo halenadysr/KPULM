@@ -1,0 +1,96 @@
+.container {
+    margin-top: 100px;
+}
+
+.modal-content {
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.modal-header {
+    background-color: #f8f9fa;
+    border-bottom: none;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.modal-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #343a40;
+}
+
+.btn-close {
+    font-size: 1.2rem;
+}
+
+.modal-body {
+    padding: 30px;
+}
+
+.logout-box {
+    text-align: center;
+}
+
+.logout-image {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.logout-image .placeholder {
+    background-color: #f0f0f0;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logout-image .placeholder p {
+    color: #6c757d;
+    font-size: 14px;
+    margin: 0;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 20px;
+    color: #343a40;
+}
+
+.btn-outline-primary {
+    color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-outline-primary:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+}
+
+@media (max-width: 576px) {
+    .modal-body {
+        padding: 20px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    .btn-lg {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+}
