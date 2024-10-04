@@ -1,0 +1,421 @@
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #fff; }
+
+p {
+  color: #b3b3b3;
+  font-weight: 300; }
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: "Roboto", sans-serif; }
+
+a {
+  -webkit-transition: .3s all ease;
+  -o-transition: .3s all ease;
+  transition: .3s all ease; }
+  a:hover {
+    text-decoration: none !important; }
+
+.content {
+  padding: 7rem 0; }
+
+h2 {
+  font-size: 20px; }
+
+.half, .half .container > .row {
+  height: 100vh;
+  min-height: 700px; }
+
+@media (max-width: 991.98px) {
+  .half .bg {
+    height: 200px; } }
+
+.half .contents {
+  background: #f6f7fc; }
+
+.half .contents, .half .bg {
+  width: 50%; }
+  @media (max-width: 1199.98px) {
+    .half .contents, .half .bg {
+      width: 100%; } }
+  .half .contents .form-control, .half .bg .form-control {
+    border: none;
+    -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    height: 54px;
+    background: #fff; }
+    .half .contents .form-control:active, .half .contents .form-control:focus, .half .bg .form-control:active, .half .bg .form-control:focus {
+      outline: none;
+      -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+      box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1); }
+
+.half .bg {
+  background-size: cover;
+  background-position: center; }
+
+.half a {
+  color: #888;
+  text-decoration: underline; }
+
+.half .btn {
+  height: 54px;
+  padding-left: 30px;
+  padding-right: 30px; }
+
+.half .forgot-pass {
+  position: relative;
+  top: 2px;
+  font-size: 14px; }
+
+.control {
+  display: block;
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  font-size: 14px; }
+  .control .caption {
+    position: relative;
+    top: .2rem;
+    color: #888; }
+
+.control input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0; }
+
+.control__indicator {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background: #e6e6e6;
+  border-radius: 4px; }
+
+.control--radio .control__indicator {
+  border-radius: 50%; }
+
+.control:hover input ~ .control__indicator,
+.control input:focus ~ .control__indicator {
+  background: #ccc; }
+
+.control input:checked ~ .control__indicator {
+  background: #E5E4FD; }
+
+.control:hover input:not([disabled]):checked ~ .control__indicator,
+.control input:checked:focus ~ .control__indicator {
+  background: #E5E4FD; }
+
+.control input:disabled ~ .control__indicator {
+  background: #e6e6e6;
+  opacity: 0.9;
+  pointer-events: none; }
+
+.control__indicator:after {
+  font-family: 'icomoon';
+  content: '\e5ca';
+  position: absolute;
+  display: none;
+  font-size: 16px;
+  -webkit-transition: .3s all ease;
+  -o-transition: .3s all ease;
+  transition: .3s all ease; }
+
+.control input:checked ~ .control__indicator:after {
+  display: block;
+  color: #fff; }
+
+.control--checkbox .control__indicator:after {
+  top: 50%;
+  left: 50%;
+  margin-top: -1px;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); }
+
+.control--checkbox input:disabled ~ .control__indicator:after {
+  border-color: #7b7b7b; }
+
+.control--checkbox input:disabled:checked ~ .control__indicator {
+  background-color: #7e0cf5;
+  opacity: .2; }
+
+  //dashboard
+  /* General body styling */
+body {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  background-color: #DAE4E5; /* Background color */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+/* Main container for content */
+.container {
+  margin-top: 40px;
+  max-width: 1200px; /* Set a maximum width for the content */
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #DAE4E5; /* Set background color */
+}
+
+/* Section title (using Montserrat) */
+h2 {
+  font-size: 24px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  color: #333;
+  text-align: center; /* Center title */
+  margin-bottom: 20px; /* Add spacing below title */
+}
+
+p {
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  color: #777;
+  margin-bottom: 30px;
+  text-align: center; /* Center paragraph text */
+}
+
+/* Container for the card section */
+.container-card {
+  display: flex;
+  flex-direction: column; /* Stack them vertically */
+  justify-content: center; /* Center cards horizontally */
+  align-items: center;
+  gap: 20px; /* Space between cards */
+  flex-wrap: wrap; /* Wrap cards on smaller screens */
+  padding: 20px 0; /* Add padding to the top and bottom */
+}
+
+/* Style for individual cards */
+@media (max-width: 768px) {
+  .container-card {
+      justify-content: center; /* Center cards on smaller screens */
+      gap: 15px;
+  }
+}
+
+  .asset-card {
+  width: 100%;
+  max-width: 300px; /* Atur lebar maksimum kartu */
+  height: auto; /* Agar ketinggian menyesuaikan dengan isi */
+  margin-bottom: 20px; /* Tambahkan jarak antar kartu */
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+/* Mengatur gambar di dalam kartu agar responsif */
+.asset-card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+/* Styling for card title */
+.asset-card h5 {
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  margin: 0;
+  margin-bottom: 15px; /* Add spacing below title */
+  color: #333;
+}
+
+/* Styling for card button */
+.asset-card button {
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth background color change on hover */
+}
+
+.asset-card button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Stat card styling */
+.stat-card {
+  border-radius: 12px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  color: #fff;
+  background-color: #3b82f6;
+  width: 250px; /* Match asset card width */
+}
+
+/* Image in stat cards */
+.stat-card img {
+  border-radius: 50%; /* Make the image round */
+  width: 50px;
+  height: 50x;
+  object-fit: cover;
+  background-color: #fff;
+  padding: 5px;
+  margin-right: 20px;
+}
+
+/* Text content in stat cards */
+.stat-card .text-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+/* Title in stat cards */
+.stat-card h5 {
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  margin: 0;
+}
+
+/* Number in stat cards */
+.stat-card h3 {
+  font-size: 32px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* Background colors for stat cards */
+.stat-card.bg-primary {
+  background-color: #3b82f6;
+}
+
+.stat-card.bg-secondary {
+  background-color: #6c757d;
+}
+
+.stat-card.bg-danger {
+  background-color: #e74c3c;
+}
+
+.stat-card.bg-info {
+  background-color: #3498db;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .container-card {
+      justify-content: center; /* Center cards on smaller screens */
+      gap: 15px;
+  }
+}
+
+  .asset-card {
+  width: 100%;
+  max-width: 300px; /* Atur lebar maksimum kartu */
+  height: auto; /* Agar ketinggian menyesuaikan dengan isi */
+  margin-bottom: 20px; /* Tambahkan jarak antar kartu */
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+/* Mengatur gambar di dalam kartu agar responsif */
+.asset-card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+/* Navbar styling */
+.navbar {
+  border-bottom: 2px solid black;
+  width: 100%;
+  position: relative;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  padding: 0 20px; /* Add padding for spacing */
+}
+
+.navbar-brand img {
+  height: 40px;
+}
+
+/* Navbar links */
+.navbar-nav .nav-link {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  color: #000;
+  margin-right: 30px; /* Space between navbar items */
+}
+
+.navbar-nav .nav-link:hover {
+  color: #007bff;
+}
+
+/* Button styling in navbar */
+.btn-primary {
+  background-color: #625df5;
+  border-radius: 20px;
+  padding: 5px 15px;
+  border: none;
+}
+
+/* Centered full-width text section */
+.full-width-text {
+  background-color: #a1a1a1;
+  color: white;
+  width: 100vw;
+  padding: 15px 0;
+  margin-left: -50vw;
+  left: 50%;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.full-width-text p {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+/* Link styling */
+.link-section a {
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: normal;
+  color: #000000;
+  text-align: center;
+  display: block;
+  margin-top: 0px;
+  margin-bottom: 40px;
+}
+
+.link-section span {
+  font-weight: bold;
+  color: #000000;
+}
+
+.link-section a:hover {
+  text-decoration: underline;
+  color: #000000;
+}

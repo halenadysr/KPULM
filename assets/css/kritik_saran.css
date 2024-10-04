@@ -1,0 +1,210 @@
+/* General body styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    background-color: #DAE4E5; /* Background color */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+/* Main container for content */
+.container {
+    margin-top: 40px;
+    max-width: 1200px; /* Set a maximum width for the content */
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #DAE4E5; /* Set background color */
+}
+
+/* Section title (using Montserrat) */
+h2 {
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: #333;
+    text-align: center; /* Center title */
+    margin-bottom: 20px; /* Add spacing below title */
+}
+
+p {
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    color: #777;
+    margin-bottom: 30px;
+    text-align: center; /* Center paragraph text */
+}
+
+/* Container for the card section */
+.container-card {
+    display: flex;
+    flex-direction: column; /* Stack them vertically */
+    justify-content: center; /* Center cards horizontally */
+    align-items: center;
+    gap: 20px; /* Space between cards */
+    flex-wrap: wrap; /* Wrap cards on smaller screens */
+    padding: 20px 0; /* Add padding to the top and bottom */
+}
+
+@media (max-width: 768px) {
+    .container-card {
+        justify-content: center; /* Center cards on smaller screens */
+        gap: 15px;
+    }
+}
+
+/* Style for individual cards */
+.asset-card {
+    width: 100%;
+    max-width: 300px; /* Atur lebar maksimum kartu */
+    height: auto; /* Agar ketinggian menyesuaikan dengan isi */
+    margin-bottom: 20px; /* Tambahkan jarak antar kartu */
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+/* Hover effect for cards */
+.asset-card:hover {
+    transform: translateY(-5px); /* Lift card slightly on hover */
+}
+
+/* Align image inside the card */
+.asset-card .img-fluid {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Styling for card title */
+.asset-card h5 {
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    margin: 0;
+    margin-bottom: 15px; /* Add spacing below title */
+    color: #333;
+}
+
+/* Styling for card button */
+.asset-card button {
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth background color change on hover */
+}
+
+.asset-card button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Stat card styling */
+.stat-card {
+    border-radius: 12px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    color: #fff;
+    background-color: #3b82f6;
+    width: 250px; /* Match asset card width */
+}
+
+/* Image in stat cards */
+.stat-card img {
+    border-radius: 50%; /* Make the image round */
+    width: 50px;
+    height: 50x;
+    object-fit: cover;
+    background-color: #fff;
+    padding: 5px;
+    margin-right: 20px;
+}
+
+/* Text content in stat cards */
+.stat-card .text-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+/* Title in stat cards */
+.stat-card h5 {
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    margin: 0;
+}
+
+/* Number in stat cards */
+.stat-card h3 {
+    font-size: 32px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    margin: 0;
+}
+
+/* Background colors for stat cards */
+.card-blue {
+    background-color: #3b82f6; /* Biru */
+    color: white;
+}
+
+.card-red {
+    background-color: #e74c3c; /* Merah */
+    color: white;
+}
+
+.card-gray {
+    background-color: #6c757d; /* Abu-abu */
+    color: white;
+}
+
+.card-purple {
+    background-color: #8e44ad; /* Ungu */
+    color: white;
+}
+
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .container-card {
+        justify-content: center; /* Center cards on smaller screens */
+        gap: 15px;
+    }
+}
+
+    .asset-card {
+    width: 100%;
+    max-width: 300px; /* Atur lebar maksimum kartu */
+    height: auto; /* Agar ketinggian menyesuaikan dengan isi */
+    margin-bottom: 20px; /* Tambahkan jarak antar kartu */
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+/* Mengatur gambar di dalam kartu agar responsif */
+.asset-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
